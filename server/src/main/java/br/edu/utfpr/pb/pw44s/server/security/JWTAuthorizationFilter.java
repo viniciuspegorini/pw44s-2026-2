@@ -40,8 +40,6 @@ public class JWTAuthorizationFilter extends BasicAuthenticationFilter {
         //Chama o método getAuthentication e retorna o usuário autenticado para dar sequência na requisição
         UsernamePasswordAuthenticationToken authenticationToken =
                 getAuthentication(request);
-        D
-
     }
 
     private UsernamePasswordAuthenticationToken getAuthentication(HttpServletRequest request) {

@@ -9,6 +9,6 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
     //Select * from tb_user where username = 'teste@gmail.com'
     User findUserByUsername(String username);
-    User findUserByUsernameLikeAnd(String username);
+    // User findUserByUsernameLikeAnd(String username);
 
 }

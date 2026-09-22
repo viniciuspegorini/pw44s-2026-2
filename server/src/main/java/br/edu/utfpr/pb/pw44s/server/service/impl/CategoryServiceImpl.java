@@ -20,17 +20,17 @@ public class CategoryServiceImpl implements ICategoryService {
 
     @Override
     public List<Category> findAll() {
-        return List.of();
+        return categoryRepository.findAll();
     }
 
     @Override
     public Page<Category> findAll(Pageable pageable) {
-        return null;
+        return categoryRepository.findAll(pageable);
     }
 
     @Override
     public Category findById(Long id) {
-        return null;
+        return categoryRepository.findById(id).orElse(null);
     }
 
     @Override
@@ -40,7 +40,7 @@ public class CategoryServiceImpl implements ICategoryService {
 
     @Override
     public void deleteById(Long id) {
-
+        categoryRepository.deleteById(id);
     }
 
     @Override

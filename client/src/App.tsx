@@ -1,12 +1,11 @@
 import './App.css'
-import { HomePage } from '@/pages/home'
-import { RegisterPage } from '@/pages/register'
+
+import { AppRoutes } from '@/routes/app-routes'
 
 function App() {
   return (
     <>
-      <HomePage />
-      <RegisterPage />
+      <AppRoutes />
     </>
   )
 }

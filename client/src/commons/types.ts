@@ -10,3 +10,28 @@ export interface IResponse {
     message?: string;
     data?: object
 }
+
+export interface IUserLogin {
+    username: string;
+    password: string;
+}
+
+export interface Authorities {
+  authority: string;
+}
+
+export interface AuthenticatedUser {
+  displayName: string;
+  username: string;
+  authorities: Authorities[];
+}
+
+export interface AuthenticationResponse {
+  token: string;
+  user: AuthenticatedUser;
+}
+
+export  interface  ICategory {
+    id?:  number;
+    name:  string;
+}

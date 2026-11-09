@@ -29,7 +29,7 @@ export const RegisterPage = () => {
     
     try {
       const response = await signup(data);
-      if (response.status === 200 && response.data) {
+      if (response.status === 200) {
         toast.current?.show({
           severity: "success",
           summary: "Sucesso",
